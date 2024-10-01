@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - iPortfolio Bootstrap Template</title>
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="starter-page-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -48,42 +48,19 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h1 class="sitename">Marc Morlas Agredano</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
       </ul>
     </nav>
 
@@ -94,31 +71,101 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Starter Page</h1>
+        <h1 class="mb-2 mb-lg-0">Graphics Engine</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Graphics Engine</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <iframe width="100%" height="600" src="https://www.youtube.com/embed/JzBwNNnQ_zg?si=iVAXXQsAh8h1ZT-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+            <ul>
+              <li><strong>Project</strong>: Custom Graphics Engine</li>
+              <li><strong>Name</strong>: KM Engine</li>
+              <li><strong>IDE used</strong>: Visual Studio 2022, Conan, Genie</li>
+              <li><strong>Libraries used</strong>: OpengGL, Assimp, Physx </li>
+              <li><strong>Project Type</strong>: Graphics Engine</li>
+              <li><strong>Version Control System</strong>: Github</li>
+              <li><strong>Project duration </strong>: 8 months</li>
+              <li><strong>Team members</strong>:
+                <ul>
+                <p>
+                  <li>2 Programmers.</li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Work during the project</h2>
+                <ul>
+                    <li>Ambient, Point, and Spot Lighting: Lighting system where you can dynamically add and remove lights.</li>
+                    <li>ECS: Entity Component System to control all components in the scene.</li>
+                    <li>Two Rendering Systems: Forward and deferred rendering.</li>
+                    <li>Multithreaded OBJ Loading: Loading OBJ files using multiple threads.</li>
+                    <li>Spatial Audio System: Using OpenAL and real-time audio FFT calculation with fftw3.</li>
+                    <li>Multi-camera Rendering System: Simultaneous multiple camera rendering with the ability to add custom shaders.</li>
+                    <li>Custom Materials: Materials with custom shaders.</li>
+                    <li>Skybox: Skybox implementation.</li>
+                    <li>Physics Systems: Using Pyxis for physics.</li>
+                    <li>Logger: Logging system for tracking events and debugging.</li>
+                    <li>Object Manipulation: Ability to move objects within the scene.</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-    </section><!-- /Starter Section Section -->
-
+    </section><!-- /Portfolio Details Section -->
+      <!-- Nueva Sección para el Gran Texto -->
+<section class="full-screen-text">
+  <div class="container d-flex flex-column justify-content-start align-items-start">
+    <h1 class="big-title">The Journey Continues</h1>
+    <p class="big-text">Immerse yourself in the epic world of Yokai Uprising. The story has just begun, and we are only scratching the surface. Stay tuned for more updates!</p>
+  </div>
+</section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
