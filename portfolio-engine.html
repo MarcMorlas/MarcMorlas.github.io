@@ -168,9 +168,54 @@
     <p class="big-text">This is the final project from my HND. The task was to create our own graphics engine in pairs</p>
   </div>
   <div class="container d-flex flex-column justify-content-start align-items-start">
-    <h1 class="big-title">Development</h1>
-    <h3 class="big-title">Development</h3>
-    <p class="big-text">Immerse yourself in the epic world of Yokai Uprising. The story has just begun, and we are only scratching the surface. Stay tuned for more updates!</p>
+    <h1 class="big-title">Main Engine Features</h1>
+    <h3 class="big-title">Engine</h3>
+    <p class="big-text">The Engine class is the core of the system that initializes and manages various components and subsystems of the application, starting with setting up the logging system and the GLFW library to create  a window with the necessary OpenGL context, up to the initialization of Imgui and the basic components of the ECS.</p>
+    <p class="big-text">The class also utilizes a component manager to handle the different elements of the ECS system, registering component classes such as transformation, rendering, physics, audio, and more. Additionally, it manages the main scene camera and the game camera, and it contains a frame buffer in which the scene will be rendered and used for the ImGui window, allowing to set and get these cameras as needed.</p>
+    <p class="big-text">The state of the engine and the main window can be checked through specific methods, and upon destruction, the Engine class takes care of cleaning up and closing all the used resources.</p>
+
+  </div>
+<div class="container d-flex flex-column justify-content-start align-items-start">
+    <h3 class="big-title">ECS</h3>
+    <p class="big-text">This class provides essential tools for creating, destroying, and managing entities along with their associated components. Each entity is assigned a unique identifier, simplifying its reference and manipulation. Managing the life cycle of entities, from creation to destruction, ensures that resources are efficiently managed.</p>
+    <p class="big-text">The component manager allows for registering various types of components that entities can have. These components are data structures containing specific information about an entity, such as its position, rendering, physics, among others. The class facilitates the assignment of components to entities, defining their characteristics and behaviors. Additionally, it provides methods for adding, updating, and removing components, promoting code modularity and reusability.</p>
+    <p class="big-text">Interacting with update systems is another key responsibility from ECS. It coordinates with these systems to ensure that entities and their components are processed correctly during each engine cycle. This includes updating component data and applying system logic, thus ensuring consistent and efficient engine operation.</p>
+
+  </div>
+
+  <div class="container d-flex flex-column justify-content-start align-items-start">
+    <h3 class="big-title">Threads</h3>
+    <p class="big-text">It's a concurrent job management system that initializes multiple threads to execute tasks asynchronously. It uses a job queue protected by a mutex and condition variable to coordinate the distribution and execution of jobs among the threads.</p>
+  </div>
+
+    <div class="container d-flex flex-column justify-content-start align-items-start">
+    <h3 class="big-title">Audio</h3>
+    <p class="big-text">The audio system in the application handles the playback and manipulation of sounds using OpenAL. This system allows for playing sounds in 2D and 3D, adjusting parameters such as pitch and gain, and managing the position and velocity of audio sources and listeners. In addition to these basic functionalities, the system has been extended to include the ability to calculate the Fast Fourier Transform (FFT) on audio in real-time, something that OpenAL does not natively support.</p>
+  </div>
+
+  <div class="container d-flex flex-column justify-content-start align-items-start">
+    <h3 class="big-title">Render</h3>
+    <p class="big-text">The rendering system handles the visualization of objects in the scene using both forward and deferred rendering techniques. This system is composed of several classes and components that work together to render high-quality graphics and apply advanced visual effects. Initially, necessary resources such as shaders and frame buffers are set up.</p>
+    <p class="big-text">It utilizes OpenGL to manage the rendering pipeline, and specific classes like RenderBase, RenderForward, and RenderDeferred to implement different rendering techniques.</p>
+  </div>
+
+    <div class="container d-flex flex-column justify-content-start align-items-start">
+     <h3 class="big-title">Forward Renderer</h3>
+    <p class="big-text">In forward rendering, the rendering process for each object includes setting up its materials, which contain information about textures and shaders. Materials determine whether a specific texture or shader will be used to render the object. Textures are bound to corresponding texture units, and shader uniforms are configured with material parameters such as diffuse and specular textures. Then, objects are drawn using their vertices and indices stored in OpenGL buffers, applying necessary transformations to position them correctly in the scene. Forward rendering is direct and performed in a single pass but can be costly in terms of performance when there are many lights and shadows to calculate.</p>
+
+  </div>
+
+    <div class="container d-flex flex-column justify-content-start align-items-start">
+     <h3 class="big-title">Deferred  Renderer</h3>
+    <p class="big-text">Deferred rendering, on the other hand, separates the process into multiple stages, allowing more efficient handling of multiple lights. First, a geometry pass is performed where information such as positions, normals, and colors are stored in various buffers. In a second pass, this information is used to calculate on-screen lighting, applying light and shadow effects more efficiently. This method is beneficial for scenes with many dynamic lights as the cost of calculating lighting is distributed and applied only once for each visible pixel.</p>
+
+  </div>
+
+      <div class="container d-flex flex-column justify-content-start align-items-start">
+     <h3 class="big-title">Light</h3>
+    <p class="big-text">The rendering system also handles shadow rendering for point, directional, and spotlights. Shadows are calculated by first rendering the scene from the light's perspective to generate a shadow map. Then, during the rendering of the main scene, these shadow maps are used to apply precise shadows to objects.</p>
+    <p class="big-text">Our scene has 4 different lights, with the ambient light being a base light that only applies color, while point, spot, and directional lights apply shadows to objects.</p>
+
   </div>
 
 
