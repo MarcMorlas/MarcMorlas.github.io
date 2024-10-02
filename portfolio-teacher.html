@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Marc Morlas Portfolio VR Teacher Page</title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -52,15 +53,17 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+    <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <a href="https://www.linkedin.com/in/marc-morlas-agredano-4422491a0/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+
+      
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
       </ul>
     </nav>
 
@@ -107,12 +110,10 @@
                 }
               </script>
 
-              <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/Nl7aOTl9o1M?si=n0oeZginH_RRPRRT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
 
-                <div class="swiper-slide">
-                  <iframe width="100%" height="450" src="https://www.youtube.com/embed/8J0tpnEFPbw?si=UbBLcAmkdiMm0lX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -155,10 +156,105 @@
     </section><!-- /Portfolio Details Section -->
       <!-- Nueva Sección para el Gran Texto -->
 <section class="full-screen-text">
-  <div class="container d-flex flex-column justify-content-start align-items-start">
-    <h1 class="big-title">The Journey Continues</h1>
-    <p class="big-text">Immerse yourself in the epic world of Yokai Uprising. The story has just begun, and we are only scratching the surface. Stay tuned for more updates!</p>
-  </div>
+      <div class="container d-flex flex-column justify-content-start align-items-start">
+        <h1 class="big-title">Synopsis</h1>
+        <p class="big-text">This project is the final assignment for the UX/UI course. In this case, we decided to create the game for the Quest2, as it presented a significant challenge that none of the team members had faced before.</p>
+        <p class="big-text">The game aims to convey to the player is stress, although the mechanics are simple. The player takes on the role of a novice teacher in a difficult class, where they must correct exams while students constantly interrupt, making the task harder and increasing the stress level. Through these mechanics, the game creates a real sense of stress.</p>
+      </div>
+
+    <br>
+    <br>
+        <div class="container d-flex flex-column justify-content-start align-items-start">
+        <h1 class="big-title">Development</h1>
+    </div>
+    <br>
+        <div class="container d-flex flex-column justify-content-start align-items-start">
+        <h3 class="big-title">Exam Mechanics/Correcting Mechanics</h3>
+        <p class="big-text">The main mechanic of the game is the grading of exams and how it works. There were several iterations regarding how the user could interact with the exams to grade them. Essentially, the user needs to look at the exam they wish to grade and count how many correct answers the student has given. On their desk, they will have five cubes, each with a number on them.</p>
+        <p class="big-text">To grade an exam, the user must place their hand over a cube, press the controller's "Trigger" to grab and activate it. At that moment, the cube will turn yellow to indicate that it is active, and when the cube touches any exam, it will automatically grade it. The exams are chosen randomly from a pool of pre-created exams. Below are the iterations that occurred during development.</p>
+        <p class="big-text">In the first iteration, once the player had grabbed the cube, they had to press one of the controller's triggers again to activate it while holding it. This iteration seemed more "realistic," but during testing with several users, the mechanic was not fully understood and was not as precise as we had thought.</p>
+        <p class="big-text">In the second iteration, which we chose to keep, the "grading cube" remains activated as long as the user is holding it.</p>
+    
+        </div>
+        <div class="container">
+    <div class="row">
+        <!-- Video 1 -->
+        <div class="col-12 col-md-6">
+            <video autoplay loop muted playsinline class="img-fluid w-100">
+                <source src="https://imgur.com/h1n9mWl.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- Video 2 -->
+        <div class="col-12 col-md-6">
+            <video autoplay loop muted playsinline class="img-fluid w-100">
+                <source src="https://imgur.com/Qyr51Fx.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+                <br>
+    <br>
+        <div class="container d-flex flex-column justify-content-start align-items-start">
+        <h3 class="big-title">Tutorial</h3>
+        <p class="big-text">I was responsible for the complete development of the tutorial. The tutorial was a significant challenge since it was a VR game; we wanted everyone to know how to play, so we had to be as clear as possible.</p>
+        <p class="big-text">One of the most difficult aspects of our project was making people understand that to punish the students, you literally had to aim at the student and shout at them.</p>
+
+    <div class="container">
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-12 col-md-6">
+                <video autoplay loop muted playsinline class="img-fluid w-100">
+                    <source src="https://imgur.com/VIwE0pN.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-12 col-md-6">
+                <video autoplay loop muted playsinline class="img-fluid w-100">
+                    <source src="https://imgur.com/jZEpwXl.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br>
+
+        <p class="big-text">On the other hand, the second important mechanic was explaining to the player how the stress level worked and helping them understand that it wouldn’t make them fail outright but would literally stress them out, increasing the chances of making mistakes during grading.</p>
+    </div>
+    
+        <div class="container">
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-12 col-md-6">
+                <video autoplay loop muted playsinline class="img-fluid w-100">
+                    <source src="https://imgur.com/OukgIK3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-12 col-md-6">
+                <video autoplay loop muted playsinline class="img-fluid w-100">
+                    <source src="https://imgur.com/JdHxmif.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div>
+    <br>
+        <p class="big-text">To finalize, I added subtitles to the tutorial in case the player doesn't fully understand what is being explained to them.</p>
+        
+        <p class="big-text">For all these reasons, I created a tutorial divided into several parts, which forced players to understand the game; otherwise, the tutorial would not progress.</p>
+    </div>
+        </div>
+
+    <div class="container d-flex flex-column justify-content-start align-items-start">
+    <br>
+    <br>
+        <h3 class="big-title">PostMortem</h3>
+        <p class="big-text">This has been my first project using VR, and the truth is that the experience has been incredible. I didn’t think it would turn out so well. A great help in the development of the project was working with a colleague I had worked with before, and we know exactly how to collaborate together. Communication and task distribution have been essential. As for the development side, I don’t think I would change much; I believe the game perfectly demonstrates what we can achieve in just a few months, and I am thrilled with the result.</p>
+
+    </div>
+    
+
 </section>
   </main>
 
